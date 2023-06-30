@@ -42,10 +42,10 @@ with col1:
 
 with BB:
     BB = st.button("Mapping demo")
-    if 2_:
+    if BB:
         switch_page("2_🌍_Mapping_Demo")
 
 with CC:
     CC = st.button("Data demo")
-    if want_to_contribute:
+    if CC:
         switch_page("3_📊_DataFrame_Demo")
