@@ -36,16 +36,16 @@ st.markdown(
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    1_ = st.button("Plotting demo")
-    if 1_:
+    AA = st.button("Plotting demo")
+    if AA:
         switch_page("1_📈_Plotting_Demo")
 
-with col2:
-    2_ = st.button("Mapping demo")
+with BB:
+    BB = st.button("Mapping demo")
     if 2_:
         switch_page("2_🌍_Mapping_Demo")
 
-with 3_:
-    3_ = st.button("Data demo")
+with CC:
+    CC = st.button("Data demo")
     if want_to_contribute:
         switch_page("3_📊_DataFrame_Demo")
