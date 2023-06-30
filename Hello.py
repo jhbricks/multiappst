@@ -38,7 +38,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     AA = st.button("Plotting demo")
     if AA:
-        switch_page("1_📈_Plotting_Demo")
+        switch_page("Hello")
 
 with col2:
     BB = st.button("Mapping demo")
