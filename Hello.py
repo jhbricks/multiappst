@@ -43,9 +43,9 @@ with col1:
 with col2:
     BB = st.button("Mapping demo")
     if BB:
-        switch_page("🌍 Mapping Demo")
+        switch_page("Plotting_Data")
 
 with col3:
     CC = st.button("Data demo")
     if CC:
-        switch_page("📊_DataFrame_Demo")
+        switch_page("Plotting Data")
