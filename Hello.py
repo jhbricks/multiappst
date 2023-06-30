@@ -38,14 +38,14 @@ col1, col2, col3 = st.columns(3)
 with col1:
     AA = st.button("Plotting demo")
     if AA:
-        switch_page("1_📈_Plotting_Demo.py")
+        switch_page("1_📈_Plotting_Demo")
 
 with col2:
     BB = st.button("Mapping demo")
     if BB:
-        switch_page("2_🌍_Mapping_Demo.py")
+        switch_page("🌍 Mapping Demo")
 
 with col3:
     CC = st.button("Data demo")
     if CC:
-        switch_page("3_📊_DataFrame_Demo.py")
+        switch_page("📊_DataFrame_Demo")
