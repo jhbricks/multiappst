@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_extras.switch_page_button import switch_page
 
 st.set_page_config(
     page_title="Hello",
@@ -15,7 +16,7 @@ st.markdown(
     Machine Learning and Data Science projects.
     **👈 Select a demo from the sidebar** to see some examples
     of what Streamlit can do!
-    ### Want to learn more?
+    ### Want to learn more?   
     - Check out [streamlit.io](https://streamlit.io)
     - Jump into our [documentation](https://docs.streamlit.io)
     - Ask a question in our [community
@@ -26,3 +27,25 @@ st.markdown(
     - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
 """
 )
+
+st.markdown(
+    """
+    **Selecione um dos itens abaixo ou abre o menu ao lado**
+    """)
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    1_ = st.button("Plotting demo")
+    if 1_:
+        switch_page("1_📈_Plotting_Demo")
+
+with col2:
+    2_ = st.button("Mapping demo")
+    if 2_:
+        switch_page("2_🌍_Mapping_Demo")
+
+with 3_:
+    3_ = st.button("Data demo")
+    if want_to_contribute:
+        switch_page("3_📊_DataFrame_Demo")
