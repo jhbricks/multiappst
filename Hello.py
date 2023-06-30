@@ -40,12 +40,12 @@ with col1:
     if AA:
         switch_page("1_📈_Plotting_Demo.py")
 
-with BB:
+with col2:
     BB = st.button("Mapping demo")
     if BB:
         switch_page("2_🌍_Mapping_Demo.py")
 
-with CC:
+with col3:
     CC = st.button("Data demo")
     if CC:
         switch_page("3_📊_DataFrame_Demo.py")
