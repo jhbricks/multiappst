@@ -9,59 +9,38 @@ st.write("# Welcome to Streamlit! 👋")
 
 options = st.sidebar.selectbox("Selecione uma opção:", ("Paraná", "Núcleo Territorial Central"))
 
-st.markdown(
-    """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
-)
+if options == "Paraná":
+	tab1, tab2 = st.tabs(["intro", "start game"])
+	with tab1:
+		st.subheader("| Intro")
+    		col1, col2 = st.columns(2, gap="small")
+    		with col1:
+			# main_image
+        		st.image("graphics/other/dungeon_crawler.png")
+
+        		st.caption("The Dungeon: a streamlit dungeon crawler game", unsafe_allow_html=True)
+   		with col2:
+        		intro_text = """
+	  		Explore the depths of an ancient dungeon in the first streamlit-based dungeon crawler game!
+        		Navigate through dangerous traps, defeat fearsome monsters and uncover the secrets of the DuNgeOn.
+        		With intuitive controls and beautiful graphics, this game will keep you entertained for hours.
+        		Experience the thrill of adventure as you progress through levels and uncover powerful treasures.
+        		Join the adventure today and become the hero of the dungeon!
+        		"""
+        		st.write(f'<p style="color:#9c9d9f">{intro_text}</p>', unsafe_allow_html=True)
+	
+
+    			st.subheader("| Game start")
+    			st.write(
+				'<p style="color:#9c9d9f">To start the game go to the "start game" tab. Please be sure to switch to <b>dark mode</b> or the custom theme. The Dungeon is meant to be played in the dark! </p><p style="color:#9c9d9f">Game update (april 2023): currently testing level2</p>',
+				unsafe_allow_html=True,)
+    				st.subheader("| Controls")
+    			st.write(
+        			'<p style="color:#9c9d9f">Desktop: please use keyboard arrows | Mobile (Android, Chrome): please use on-screen buttons | iOS: unfortunately, the auto-scrolling feature does not work yet for iOS.</p><br>',
+        			unsafe_allow_html=True,)
 
 
-import streamlit as st
+	with tab2:
 
-m = st.markdown("""
-<style>
-div.stButton > button:first-child { 
-    background-color: #ce1126;
-    color: white;
-    height: 3em;
-    width: 12em;
-    border-radius:10px;
-    border:3px solid #000000;
-    font-size:20px;
-    font-weight: bold;
-    margin: auto;
-    display: block;
-}
+		st.markdown("""AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA""")
 
-div.stButton > button:hover {
-	background:linear-gradient(to bottom, #ce1126 5%, #ff5a5a 100%);
-	background-color:#ce1126;
-}
-
-div.stButton > button:active {
-	position:relative;
-	top:3px;
-}
-
-</style>""", unsafe_allow_html=True)
-
-b = st.button("Button 1")
-
-
-st.markdown('<p></p>', unsafe_allow_html = True)
-st.markdown('<p></p>', unsafe_allow_html = True)
-st.markdown('<p></p>', unsafe_allow_html = True)
-
-c = st .button("Button 2")
