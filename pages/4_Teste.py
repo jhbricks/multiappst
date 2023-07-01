@@ -13,8 +13,9 @@ if options == "Paraná":
 	tab1, tab2 = st.tabs(["intro", "start game"])
 	with tab1:
 		st.subheader("| Intro")
-    		st.subheader("AAAAAAAAAAAAAAAAAAAAAA")
+    		
 	with tab2:
+		st.subheader("AAAA")
 		└─── pages/testes/
 		  └─── About.py # This is a page
   		  └─── 2_Teste.py # This is another page
