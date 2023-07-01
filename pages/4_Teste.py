@@ -13,7 +13,7 @@ if options == "Paraná":
 	tab1, tab2 = st.tabs(["intro", "start game"])
 	with tab1:
 		st.subheader("| Intro")
-    		st.write(f'<p style="color:#9c9d9f">{intro_text}</p>', unsafe_allow_html=True)
+    		st.write("AAAAAAAAAAAAAAAAAAAAAA")
 	with tab2:
 		└─── pages/testes/
 		  └─── About.py # This is a page
