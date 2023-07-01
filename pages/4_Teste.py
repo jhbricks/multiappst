@@ -15,8 +15,7 @@ if options == "Paraná":
 		st.subheader("| Intro")
     		
 	with tab2:
-		st.subheader("AAAA")
-		└─── pages/testes/
+		└─── testes/
 		  └─── About.py # This is a page
   		  └─── 2_Teste.py # This is another page
 
