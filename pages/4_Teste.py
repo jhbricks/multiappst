@@ -15,7 +15,7 @@ if options == "Paraná":
 		st.subheader("| Intro")
     		st.write(f'<p style="color:#9c9d9f">{intro_text}</p>', unsafe_allow_html=True)
 	with tab2:
-		└─── testes/
+		└─── pages/testes/
 		  └─── About.py # This is a page
   		  └─── 2_Teste.py # This is another page
 
